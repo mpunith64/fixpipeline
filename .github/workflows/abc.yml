@@ -1,9 +1,8 @@
 name: Version Bump
 
 on:
-  push:
-    branches:
-      - main
+  repository_dispatch:
+    types: [helm_push]
   workflow_dispatch:
 
 jobs:
