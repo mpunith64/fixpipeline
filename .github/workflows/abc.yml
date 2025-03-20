@@ -13,9 +13,6 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Check package.json
-        run: ls -la ./
-
       - name: Automated Version Bump
         id: version-bump
         uses: 'phips28/gh-action-bump-version@master'
